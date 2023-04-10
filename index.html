@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../styles/lightbox.min.css">
+    <title>Aram Shojaeimehr</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VaQCYP--uczaGhYVfwOdFBELdXYefClvtaBMnbSrSHwZRYjuAxxWm5oZZDqOo8GrVy09S_askkxqiuMt4mjWlQ" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hcmFtc2hvamFlaW1laHIuaXJhbi5saWFyYS5ydW4v"/></head>
+
+<body class="w-screen h-max  overflow-x-hidden bg-blue-100">
+    <!-- main section -->
+    <main class="w-screen h-screen flex flex-col items-start justify-between"> <!-- header -->
+        <header
+            class="flex sticky top-0 z-50 h-max px-10 py-4 drop-shadow-md shadow-sm w-screen bg-blue-200 items-start justify-between">
+
+            <nav  data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000">
+                <button id="openMenuButton" class="flex md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+
+                <button class="hidden md:hidden" id="closeMenuButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-arrow-left"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </button>
+                <!-- responsive menu -->
+                <ul id="menu" class="hidden  items-startitems-center  justify-between  flex-col gap-1">
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">Home</li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                            href="#education">Education</a>
+                    </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                            href="./pages/products.html">Painting & Drawing</a>
+                    </li>
+                    <li class="cursor-pointer relative hover:bg-slate-200 px-4 py-2 rounded-lg submenu">
+                        Resin Products
+                        <ul class="hidden absolute bg-blue-200 px-3 py-2 top-10 rounded-md submenu-item items-center flex-col justify-between gap-1">
+                            <li class="mt-5 cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">
+                                <a href="./pages/goods.html">goods</a>
+                            </li>
+                            <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">
+                                <a href="./pages/jewelry.html">jewelry</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                        href="./pages/graphic.html">graphic Design</a>
+                </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                            href="#exhibitions">Exhibitions</a>
+                    </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                            href="#workshops">Workshops</a>
+                    </li>
+              
+                </ul>
+                <!-- menu -->
+                <ul class="hidden md:flex items-start   justify-between flex-row gap-1">
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">Home</li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                            href="#education">Education</a>
+                    </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                        href="./pages/products.html">Paintings & Drawings</a>
+                </li>
+                    <li class="cursor-pointer relative hover:bg-slate-200 px-4 py-2 rounded-lg submenu">
+                        Resin Products
+                        <ul class="hidden absolute bg-blue-200 px-3 py-2 top-10 rounded-md submenu-item items-center flex-col justify-between gap-1">
+                            <li class="mt-5 cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">
+                               <a href="./pages/goods.html">goods</a>
+                            </li>
+                            <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg">
+                                <a href="./pages/jewelry.html">jewelry</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                        href="./pages/graphic.html">Graphic Design</a>
+                </li>
+                    <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                        href="#exhibitions">Exhibitions</a>
+                </li>
+                <li class="cursor-pointer hover:bg-slate-200 px-4 py-2 rounded-lg"><a
+                        href="#workshops">Workshops</a>
+                </li>
+                
+                </ul>
+            </nav>
+
+            <h1  data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000" class="font-bold text-4xl text-white">Aram Shojaeimehr</h1>
+        </header>
+
+        <!-- hero section -->
+        <article
+            class="flex  flex-col-reverse h-max mt-5 px-10  md:flex-row  w-full   items-start justify-between ">
+            <!-- about -->
+            <section  data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="300"
+            data-aos-duration="1000" class="flex flex-col  md:w-9/12 items-start justify-start">
+                <div
+                    class="flex p-5 flex-col items-start justify-between bg-blue-300 gap-2 shadow-lg drop-shadow px-4  rounded-md">
+                    <h2 class="font-bold ">About Me</h2>
+                    <p class="text-lg leading-10 font-Poppins font-medium ">
+ I was born and raised in a small but beautiful city in southwest Iran with stunning landscapes in the suburbs. Since I was a child, I knew I wanted to be an artist, but there was no art school in my hometown, so I had to pursue my education in another field.
+After graduation, I was determined to apply for a bachelor’s degree in fine arts and ranked 600 in the national entrance exam. When I entered the art university, I started my transformation journey by observing the works of well-known artists, and my professors made me more enthusiastic about working hard to develop my knowledge in that area. In the university, I was fortunate to paint vis a vis not only my classmates but also my teachers, which increased my proficiency. Furthermore, holding group exhibitions on campus by various students with different mental attitudes opened my eyes to thinking outside the box.
+After receiving my bachelor’s degree, besides working in my private studio, I started my career as an art teacher in art schools and colleges to positively influence my students. I worked daily to pass everything I had learned to my students. Most importantly, I attempted to remind them of the importance of art in our lives and how humankind has struggled to beautify their world with art, soothe their pain and make themselves perfect. Moreover, I encouraged my students to create artwork and follow their standards by setting up small exhibitions at the schoolyard.
+Indeed, working as a teacher improved my soft and technical skills as schoolchildren had different capabilities, which needed a variety of teaching methods to nurture their creativity.
+When my son was born, I was worried about not painting anymore because of household chores and parental responsibilities. Still, my passion for painting was far more, which gave me the power to balance my personal and professional life as I have held some painting exhibitions and workshops since then.
+
+                    </p>
+                </div>
+            </section>
+            <!-- image -->
+            <figure  data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000" class="flex  h-max  flex-col md:w-6/12  items-center justify-start gap-2">
+            <img class="w-full rounded-lg  md:w-4/6 md:h-max" src="./assets/Profile/profile.jpg"
+                    alt="Aram shojaeiMehr">                    
+                <figcaption class="text-center animate-charcter text-lg font-semibold">Follow Your Dreams...</figcaption>
+            </figure>
+        </article>
+
+
+
+
+        <!-- items -->
+        <article class="flex relative flex-col w-screen  items-start justify-between  mt-14">
+            <!-- education -->
+            <section  data-aos="fade-down"  data-aos-delay="150"   data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom" id="education" class="flex relative w-screen h-screen items-center justify-center px-10  ">
+                <img src="./assets/blob/blob-1.svg" class="absolute " alt="">  
+            <div
+                    class="flex w-max bg-blue-300 flex-col  p-10  items-start justify-start gap-2 shadow-lg drop-shadow  rounded-md ">
+                    <h1 class="text-black font-bold text-lg">Education</h1>
+                    <div class="flex items-start ml-3 justify-between gap-1">
+                        <p>
+                            <Strong>Bachelor of Arts:</Strong> <span>Visual arts, painting, 03/2015</span>
+                        </p>
+                    </div>
+                    <div class="flex items-start ml-3 justify-between gap-1">
+                        <p>
+                            <Strong>Art of Shiraz Institute of Higher Education</Strong> <span>-Shiraz, Iran</span>
+
+                        </p>
+                    </div>
+                    <div class="flex items-start ml-3 justify-between gap-1">
+                        <p>
+                            <Strong>AAssociate of Applied Science: </Strong> <span>Computer Software, 01/2008</span>
+
+                        </p>
+                    </div>
+                    <div class="flex items-start ml-3 justify-between gap-1">
+                        <p>
+                            <Strong>Ahvaz Jahad Daneshgahi - </Strong> <span>Ahvaz, Iran</span>
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Exhibitions -->
+            <section data-aos="fade-down" data-aos-delay="150"   data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom" id="exhibitions" class="flex relative flex-row-reverse w-full h-screen mt-20 px-10 items-center justify-center">
+                <img src="./assets/blob/blob-2.svg" class="absolute" alt="" srcset="">   
+            <div class="flex w-max bg-blue-300 flex-col  p-10 relative  items-start justify-start gap-2 shadow-lg drop-shadow  rounded-md ">
+                <h1 class="text-black font-bold text-lg">Exhibitions</h1>
+                    <div class="flex flex-col items-start ml-5 justify-between gap-1">
+                        <h3 class="text-lg font-semibold ">''Untitled''</h3>
+                        <div class="flex flex-col ml-8">
+                            <span>Solo Painting Exhibition</span>
+                            <span>Negarkhane Mehr, Marvdasht, Fars - From November 10 to 17, 2018</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start ml-5 justify-between gap-1">
+                        <h3 class="text-lg font-semibold ">''Art Home''</h3>
+                        <div class="flex flex-col ml-8">
+                            <span>Painting, Photographs Group Exhibition</span>
+                            <span>Ehsan Gallery, Tehran - November 24 to 29, 2018</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start ml-5 justify-between gap-1">
+                        <h3 class="text-lg font-semibold ">''Colored Mind''</h3>
+                        <div class="flex flex-col ml-8">
+                            <span>Painting Group Exhibition</span>
+                            <span>Erik Gallery, Tehran - February 23 to 29, 2018</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+                 <!-- workshops --> 
+                 <section data-aos="fade-down" data-aos-delay="150"   data-aos-duration="1000"
+                 data-aos-anchor-placement="center-bottom" id="workshops" class="relative flex w-full h-screen mt-20 md:ml-10 px-10 items-center justify-center">
+                    <img src="./assets/blob/blob-3.svg" class="absolute" alt="">
+                 <div
+                        class="flex w-max bg-blue-300 flex-col  p-10  items-start justify-start gap-2 shadow-lg drop-shadow  rounded-md ">
+                        <h1 class="text-black font-bold text-lg">Workshops</h1>
+                        <div class="flex items-start ml-3 justify-between gap-5">
+                            <Strong>2-day Abstract and Rein Workshos</Strong> 
+                        </div>
+                        <div class="flex items-start ml-3 justify-between gap-1">
+                            <Strong>Mir Emad Artschool,  Marvdasht, Fars - October 18 and 19, 2019 </Strong> 
+                        </div>
+                        <div class="flex items-start ml-3 justify-between gap-1">
+                            <Strong>Mir Emad Artschool,  Marvdasht, Fars - Desember 26 and 27, 2022 </Strong> 
+                        </div>
+                        <div class="flex items-start ml-3 justify-between gap-1">
+                            <Strong>Mir Emad Artschool,  Marvdasht, Fars - January 17 and 18, 2023 </Strong>
+                        </div>
+                    </div>
+    
+                </section>
+
+
+
+                <!-- footer -->
+
+                <section class="flex flex-col-reverse md:flex-row md:items-start items-center md:justify-between justify-center w-screen mt-10 h-32 py-10 bg-blue-300">
+                    
+                    <div class="px-10">
+                        <strong class="text-white font-bold text-lg flex items-start justify-between gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z"/></svg>
+                            all right reserved for <mark>Aram Shojaeimehr</mark></strong>
+                    </div>
+                    <div id="contact" class="flex flex-col items-start justify-between gap-3 px-10">
+                        <h3 >Contact ways</h3>
+                        <div class="flex flex-col md:flex-row items-start justify-between gap-5">
+                            <!-- instagram -->
+                            <a href="https://instagram.com/aramart.gallery" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"  fill="currentColor" class=" hover:text-red-600" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                            </a>
+                            <!-- emial -->
+                            <a href="mailto:aramshojaeimehr@gmail.com">
+                                <svg xmlns="http://www.w3.org/2000/svg"width="28" height="28"  fill="currentColor" class=" hover:text-blue-600" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192c0-35.3-28.7-64-64-64s-64 28.7-64 64s28.7 64 64 64s64-28.7 64-64z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                   
+                </section>
+        </article>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="../scripts/lightbox-plus-jquery.min.js"></script>
+        <script src="../scripts/lightbox.min.js"></script>
+        <script src="./scripts/app.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </main>
+ 
+</body>
+
+</html>
